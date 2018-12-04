@@ -5,7 +5,7 @@ public class BonusService {
         int blueCardBonus = 50;
         int silverCardBonus = 70;
         int goldCardBonus = 90;
-        int entirePart = (int) (purchaseAmount / 1_000);
+        int entirePart = purchaseAmount / 1_000;
         int bonusValue = 0;
 
         if (purchaseAmount >= 1 && purchaseAmount <= 15_000) {

@@ -9,11 +9,6 @@ class BonusServiceTest {
     void calculateBonus() {
         {
             BonusService service = new BonusService();
-            int cashback = service.calculateBonus(0, 1_000);
-            assertEquals(0, cashback);
-        }
-        {
-            BonusService service = new BonusService();
             int cashback = service.calculateBonus(1_001, 1_000);
             assertEquals(50, cashback);
         }
